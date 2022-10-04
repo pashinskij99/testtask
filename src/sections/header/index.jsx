@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../../components/button'
 
 const Header = () => {
   return (
@@ -8,7 +9,9 @@ const Header = () => {
         <p className='header__paragraph margin-bottom-30px'>
           What defines a good front-end developer is one that has skilled knowledge of HTML, CSS, JS with a vast understanding of User design thinking as they'll be building web interfaces with accessibility in mind. They should also be excited to learn, as the world of Front-End Development keeps evolving.
         </p>
-        <a href='#signin' className='btn btn-primary'>Sign up</a>
+        <Button TagHtml='a' href='#signin' colorThemeClass="btn-primary" >
+          Sign up
+        </Button>
       </div>
     </section>
   )

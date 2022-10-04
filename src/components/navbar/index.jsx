@@ -1,6 +1,7 @@
 import React from 'react'
 import {ReactComponent as LogoImg} from '../../assets/icons/logo_img.svg'
 import {ReactComponent as LogoText} from '../../assets/icons/logo_text.svg'
+import { Button } from '../button'
 
 export const Navbar = () => {
 
@@ -12,8 +13,12 @@ export const Navbar = () => {
 				<LogoText className='logo-text' />
 			</div>
 			<div className="navbar__user">
-				<a href='#users' className='btn btn-primary'>Users</a>
-				<a href='#signin' className='btn btn-primary margin-left-10px'>Sign up</a>
+				<Button TagHtml='a' href='#users'>
+					Users
+				</Button>
+				<Button TagHtml='a' href='#signin' className='margin-left-10px'>
+					Sign up
+				</Button>
 			</div>
 		</div>
 	</div>

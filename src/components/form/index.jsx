@@ -10,6 +10,7 @@ import { FormUploadBtn } from './formUploadBtn'
 import { addUsers } from '../../store/users'
 import { setTogglePopup } from '../../store/popup'
 import Preloader from '../preloader'
+import { Button } from '../button'
 
 
 export const Form = () => {
@@ -95,13 +96,11 @@ export const Form = () => {
       <FormUploadBtn register={register} />
       
       <div className='form__btn'>
-        <button
-          disabled={!isValid && !file}
-          type='submit'
-          className='btn btn-primary'
+        <Button 
+          TagHtml='button' 
         >
           Sign up
-        </button>
+        </Button>
       </div>
 
       <Popup status={status} popup={popup} >
