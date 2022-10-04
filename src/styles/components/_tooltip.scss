@@ -1,0 +1,28 @@
+.tooltip {
+  position: relative;
+  display: block;
+  //width: fit-content;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &__text {
+    opacity: 0;
+    //visibility: hidden;
+    width: fit-content;
+    background-color: rgba($black-color, 0.87);
+    color: $white-color;
+    text-align: center;
+    padding: 0.5rem 1.6rem;
+    border-radius: .4rem;
+    position: fixed;
+    z-index: 1;
+    pointer-events: none;
+    touch-action: none;
+    transition: opacity 0.2s;
+  }
+  &:hover &__text {
+    opacity: 1;
+    //visibility: visible;
+  }
+}

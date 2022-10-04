@@ -1,0 +1,31 @@
+.navbar {
+	position: sticky;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: $white-color;
+	padding: 1.3rem 0;
+	z-index: 10;
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		display: flex;
+		align-items: center;
+		.logo-img {
+			margin-right: 0.2rem;
+		}
+		.logo-text {}
+	}
+	&__user {
+		display: flex;
+		align-items: center;
+		@include respond(small-phone) {
+			a {
+				padding: 0.7rem 1.5rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.card {
+	padding: 2rem;
+	text-align: center;
+	background: $white-color;
+	border-radius: 1rem;
+	overflow: hidden;
+	transition: box-shadow 0.3s ease-out;
+	cursor: pointer;
+	&:hover {
+		-webkit-box-shadow: .1rem .1rem 1.1rem .1rem rgba(0,0,0,0.15);
+		-moz-box-shadow: .1rem .1rem 1.1rem .1rem rgba(0,0,0,0.15);
+		box-shadow: .1rem .1rem 1.1rem .1rem rgba(0,0,0,0.15);
+	}
+	&__img {
+		width: 7rem;
+		height: 7rem;
+		border-radius: 50%;
+	}
+	&__title, &__vacancy, &__address, &__number {
+		//width: fit-content;
+		margin: 0 auto;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		font-weight: 400;
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+		color: rgba($black-color, 0.87);
+		font-style: normal;
+		cursor: pointer;
+	}
+}

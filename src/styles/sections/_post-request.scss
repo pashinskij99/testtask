@@ -1,0 +1,13 @@
+.post-request {
+  &__title {
+    text-align: center;
+  }
+  &__container {
+    width: 38rem;
+    margin: 0 auto;
+    @include respond(small-phone) {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+}

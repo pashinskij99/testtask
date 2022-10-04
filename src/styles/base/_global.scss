@@ -1,0 +1,71 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	@include respond(big-screen) {
+		font-size: 75%;
+	}
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	overflow-wrap: break-word;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	-webkit-box-shadow: 0 0 0px 1000px $background-color inset;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	line-height: 1.6rem;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	@include respond(tab-land) {
+		max-width: none;
+		padding: 0 60px;
+	}
+	@include respond(tab-port) {
+		padding: 0 30px;
+	}
+	@include respond(phone) {
+		padding: 0 15px;
+	}
+}
+
+.container-section1 {
+	max-width: 1200px;
+	margin: 0 auto;
+	@media screen and (max-width: 1200px) {
+		max-width: none;
+	}
+}
+
